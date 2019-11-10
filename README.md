@@ -31,6 +31,7 @@ npm run cypress:open
 This command will execute **cypress** GUI-Chrome and you can select tests to run:
 
 **TraditionalTest.e2e.specs.ts**
+
 **VisualAITest.e2e.specs.ts**
 
 ```
@@ -50,8 +51,10 @@ visualApplitoolsHackathon/cypress/pages/basepage.ts
 ```
 
 There you can modify which version of the APP you want to test by changing the URL
-from this.url = 'https://demo.applitools.com/hackathon.html';
-to this.url = 'https://demo.applitools.com/hackathonV2.html';
+from 
+**this.url = 'https://demo.applitools.com/hackathon.html';**
+to 
+**this.url = 'https://demo.applitools.com/hackathonV2.html';**
 
 ## Reporting
 
@@ -69,15 +72,15 @@ Here I'm using a json for users that can be found in cypress/fixtures
 
 1.  There's no much support for typescript and lacking some TS typings for Applitools Eyes
 
-2.  Sometimes when testing the canvas with cypress it didnt load so i had to restart the Cypress GUI in order to make it work -- Happens rarely but it can be noted here
-
-https://eyes.applitools.com/app/test-results/00000251828938236936/00000251828938214746/steps/1?accountId=Quz2xHHZtkOFiIHxI6EMlw~~&display=gallery&mode=step-editor
+2.  Sometimes when testing the canvas with cypress it didnt load so i had to restart the Cypress GUI in order to make it work -- Happens rarely but it can be noted **here**: https://eyes.applitools.com/app/test-results/00000251828938236936/00000251828938214746/steps/1?accountId=Quz2xHHZtkOFiIHxI6EMlw~~&display=gallery&mode=step-editor
 
 So for that reason I used
 
 ```
 cy.wait(150);
-``
+```
+
+
 to make my test more stable.
 
 ## Authors
